@@ -7,7 +7,27 @@
   <title>粒子爱心</title>
   <!-- import CSS -->
 <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
- 
+   <!-- 页面编码 -->
+   <meta charset="UTF-8" />
+    
+    
+   <!--
+       http-equiv常见还有其它如下等（合理使用可增加 SEO 收录）。
+       Content-Language : 设置网页语言
+       Refresh : 指定时间刷新页面
+       set-cookie : 设定页面 cookie 过期时间
+       last-modified : 页面最后生成时间
+       expires : 设置 cache 过期时间
+       cache-control : 设置文档的缓存机制
+       ...
+       -->
+   
+   <!-- 缓存与过期时间设置 -->
+   <meta http-equiv="Pragma" content="no-cache">
+   <meta http-equiv="Cache-Control" content="no-cache">
+   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />//强制更新
+   <meta http-equiv="x-dns-prefetch-control" content="on">
+   <meta http-equiv="Expires" content="0">
 </head>
 <style>
   html,
@@ -71,7 +91,7 @@
   
 
 <div id="app">
-  <button id ="button1" class="button" style="margin-left: 48%;margin-top: 10%;">买车</button>
+  <button id ="button1"  class="button" style="position: absolute; left:50%;top:10px">买车</button>
   <button id ="button2"  class="button"  type="danger">不买车</button>
   <div class="middle">
     <div class="middle2">
