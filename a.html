@@ -96,11 +96,12 @@
 
 <div id="app">
   <button id ="button1"  class="button" style="position: absolute; left:50%;top:10px">买车</button>
-  <button id ="button2"  class="button"  type="danger">不买车</button>
-  <div class="middle">
+  <button id ="button2"  class="button"  style="position: absolute;;" type="danger">不买车</button>
+ 
+  <div class="middle" style="position: absolute;top:10%">
     <div class="middle2">
     </div>
-    <img id="img"" style="display: none;" src="https://pic.imgdb.cn/item/642547f5a682492fcc15cd5d.gif" width="1000" height="650" />
+    <img id="img"" style="display: none;" src="https://pic.imgdb.cn/item/642547f5a682492fcc15cd5d.gif"    />
   </div>
 </div>
  
@@ -126,8 +127,8 @@
     }
     console.log('move-----'+left+'----'+right)
     
-    document.getElementById('button2').style['margin-left']=left
-    document.getElementById('button2').style['margin-top'] =right
+    document.getElementById('button2').style['left']=left
+    document.getElementById('button2').style['top']=right
   },100)
  
  
